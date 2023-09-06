@@ -1,3 +1,5 @@
+/src/main/resources/jdbc.*
+
 
 # Compiled class file
 *.class
