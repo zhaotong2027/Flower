@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerDAO {
+    public void insertFlower(Flower flower) {
+        // todo mybatis plus的使用
+    }
 
     public List<Flower> queryFlowerList() {
         List<Flower> result = new ArrayList<Flower>();
@@ -11,8 +14,8 @@ public class FlowerDAO {
         for (int i = 0; i < 10; i++) {
             Flower user = new Flower();
             user.setName("刘氏小天使" + i);
-            user.setCause("未淘汰" + i);
-            user.setStatus(i + 1);
+            user.setRemark("未淘汰");
+            user.setStatus(0);
             result.add(user);
         }
         return result;

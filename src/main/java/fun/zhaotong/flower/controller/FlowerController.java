@@ -27,7 +27,7 @@ public class FlowerController {
 
         List<Flower> flowers = flowerService.queryFlowerList();
         for (Flower flower: flowers) {
-            results += flower.getName() + flower.getCause();
+            results += flower.getName() + flower.getRemark();
             System.out.println();
         }
         context.destroy();
